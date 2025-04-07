@@ -21,7 +21,7 @@ class TodoViewSet(viewsets.ModelViewSet):
         instance.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
-    # You can add custom actions if needed, for example, marking a todo as complete
+
     def mark_as_complete(self, request, pk=None):
         try:
             todo = self.get_object()
